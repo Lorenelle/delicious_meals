@@ -17,4 +17,6 @@ God Bless and Have Fun!
 
 ## App Demo
 
+[GIF Demo](https://drive.google.com/file/d/1knJVL2DQztI6yduSbB4ZjUlADEm2yJXx/view?usp=sharing)
 
+[Delicious Meals Recording](https://drive.google.com/file/d/1q2sAVhatfunvZGAxt1pcCfZff_sRMnk2/view?usp=sharing)
