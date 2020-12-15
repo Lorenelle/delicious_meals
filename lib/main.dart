@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'DeliMeals',
+      title: 'Meals',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         accentColor: Colors.amber,
