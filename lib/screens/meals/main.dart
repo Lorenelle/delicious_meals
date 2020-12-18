@@ -24,7 +24,7 @@ class _MealsScreenState extends State<MealsScreen> {
   void didChangeDependencies() {
     super.didChangeDependencies();
 
-    if(_loadedInitData) return;
+    if (_loadedInitData) return;
 
     category = ModalRoute.of(context).settings.arguments as Category;
     displayedMeals = widget.availableMeals
@@ -36,7 +36,7 @@ class _MealsScreenState extends State<MealsScreen> {
 
   void _removeMeal(String mealId) {
     setState(() {
-      displayedMeals.removeWhere( (meal) => meal.id == mealId);
+      displayedMeals.removeWhere((meal) => meal.id == mealId);
     });
   }
 
@@ -55,6 +55,7 @@ class _MealsScreenState extends State<MealsScreen> {
             complexity: displayedMeals[index].complexity,
             duration: displayedMeals[index].duration,
             imageUrl: displayedMeals[index].imageUrl,
+            remove: _removeMeal,
           );
         },
         itemCount: displayedMeals.length,

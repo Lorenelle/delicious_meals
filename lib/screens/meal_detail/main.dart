@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../dummy_data.dart';
 import '../../models/meal.dart';
 
-
 class MealDetailScreen extends StatelessWidget {
   static const route = 'meal-detail';
 
@@ -46,6 +45,17 @@ class MealDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(meal.title),
+        actions: [
+          FlatButton(
+            child: Icon(
+              Icons.delete,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pop(context, "del");
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -101,7 +111,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(
-            _isFavorite(mealId) ? Icons.favorite : Icons.favorite_border,
+          _isFavorite(mealId) ? Icons.favorite : Icons.favorite_border,
           color: _theme.primaryColor,
         ),
         onPressed: () => _toggleFavorite(mealId),
